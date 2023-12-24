@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, tr, td ,th{
+            border: 3px solid green;
+            border-collapse: collapse;
+            
+            text-align: left;
+        }
+        th{
+            background-color:black;
+            color: white;
+        }
+        table tr:nth-child(even){
+            background-color:red;
+        }
+        table tr:nth-child(odd){
+            background-color:gainsboro;
+        }
+        
+    </style>
+  
+</head>
+<body>
+    <h1>Example of making table in HTML</h1>
+  
+    <table style="width: 50%;">
+       <b> <caption> DATA</caption></b>
+      
+  
+  <tr>
+        <th>GAME</th>
+        <th>COUNTRY</th>
+        <th>POINTS</th>
+    </tr>
+    <tr>
+        <td>Football</td>
+        <td>Germany</td>
+        <td>12</td>
+    </tr>
+    <tr>
+        <td>Cricket</td>
+        <td>Australia</td>
+        <td rowspan="2">12</td>
+    </tr>
+    <tr>
+        <td>Hockey</td>
+        <td>India</td>
+   
+    </tr>
+   
+</body>
+</html>
