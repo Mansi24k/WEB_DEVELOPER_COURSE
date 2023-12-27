@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>datalist in form</h3>
+    <form method="get">
+        <input list="color" name="color">
+        <datalist id="color">
+            <option value="red">
+            <option value="pink">
+            <option value="blue">
+            <option value="orange">
+        </datalist>
+        <input type="submit">
+    </form>
+
+    <h3>output in form</h3>
+    <form method="get" oninput="output.value= parseInt(first.value)+parseInt(second.value)">
+        <input type="number" id="first" name="first" value="50"> +
+        <input type="number" id="second" name="second" value="50"> =
+        <output name="output" for="first second"></output>
+    </form>
+
+    <h3>example of input type color:</h3>
+    <form>
+       select a color of your choice:
+       <input type="color" name="color">
+       <input type="submit" value="send">
+    </form>
+
+    <h3>example of input type URL:</h3>
+    <form>
+       select a color of your choice:
+       <input type="url" name="url">
+       <input type="submit" value="send">
+    </form>
+
+    <h3>example of autocomplete attribute:</h3>
+    <form>
+       <label>First name: <input type="text" name="fname" autocomplete="off"></label>
+       <label>Second name: <input type="text" name="Sname" autocomplete="on"></label>
+       <input type="submit" value="send">
+    </form>
+
+    <h3>example of autofocus attribute:</h3>
+    <form>
+       <label>First name: <input type="text" name="fname" ></label>
+       <label>Second name: <input type="text" name="Sname"></label>
+       <label>Age: <input type="number" name="age" autofocus></label>
+       <input type="submit" value="send">
+    </form>
+
+    <h3>example of Multiple Attribute:</h3>
+    <form>
+      Browse a picture:
+       <input type="file" name="image" multiple>
+       <input type="submit">
+    </form>
+
+    <h3>example of Novalidate attribute:</h3>
+    <form>
+       <label>First name: <input type="text" name="fname" ></label>
+       <label>Second name: <input type="text" name="Sname"></label>
+       <label>Email: <input type="email" name="email" ></label>
+       <input type="submit" value="default" class="btn">
+       <input type="submit" value="Form-novalidate" class="btn" formnovalidate>
+    </form>
+</body>
+</html>
