@@ -9,13 +9,13 @@
     <form>
     <label for="Firstname">
         First Name:
-        <input type="text" name="firstname" id="firstname"/>
+        <input type="text" name="firstName" id="firstname" required autocomplete="off"/>
     </label>
     <br>
      <br>
     <label for="Lastname">
        Last Name:
-        <input type="text" name="Lastname" id="Lastname"/>
+        <input type="text" name="LastName" id="Lastname" autocomplete="on"/>
     </label>
     <br>
      <br>
@@ -41,8 +41,16 @@
         <label for="timing2">11AM-12AM</label>
         <input type="checkbox" name="timing3" id="timing3" value="12AM-1PM"/>
         <label for="timing3">12AM-1PM</label>
-
         <br>
+         <br>
+         <input type="file"/>
+         <br>
+         <br>
+         <input type="date"/>
+         <br>
+         <br>
+         <input type="time"/>
+         <br>
          <br>
         <button>Submit</button>
     </form>

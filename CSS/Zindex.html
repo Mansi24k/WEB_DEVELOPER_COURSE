@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .relative{
+            position: relative;
+        }
+        .z-index1{  
+            position: absolute;
+            border: 3px solid black;
+            height: 300px;
+            width: 100px;
+            background-color: lightgreen;
+            top: 80px;
+            left: 70px;
+            z-index: 9;
+        }
+        .z-index2{  
+            position: absolute;
+            border: 3px solid black;
+            height: 250px;
+            width: 300px;
+            background-color: green;
+            top: 50px;
+            left: 50px;
+            z-index: 6;
+        }
+        .z-index3{  
+            position: absolute;
+            border: 3px solid black;
+            height: 200px;
+            width: 200px;
+            background-color: tomato;
+            z-index: 11;
+        }
+        .main{
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+        .flower{
+            position: relative;
+        }
+        p{
+            position: absolute;
+            color: white;
+            left: 20PX;
+        }
+        img{
+            position: absolute;
+            z-index: -1;
+            box-shadow: 10px 20px grey;
+        }
+        .opa{
+            margin-top: 500px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div>
+    <h1>Z-index Example</h1>
+    <p>The div which has z-index value greater that will appear on the top layer</p>
+    <div class="relative">
+    <div class="z-index1"> z-index1</div>
+    <div class="z-index2">z-index2 </div>
+    <div class="z-index3">z-index3</div> <!--it has the z-index value greater so it is appearing on the top of layer-->
+    </div>
+   </div>
+    <div class="flower">
+        <h2>The example where we use z-index to bring text content on the img</h2>
+      <p>This is an Image of a flower</p>
+     <img height="400" width="400" src="../images/flower.jpg"/>
+    </div>
+    </div>
+    <div class="opa">
+    <h2>example of opacity </h2>
+    <img src="../images/flower.jpg"/>
+    </div>
+</body>
+</html>

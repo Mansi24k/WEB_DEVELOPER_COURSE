@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:visited{
+            color: red;
+        }
+        a:hover{
+            color: yellow;
+        }
+        a:active{
+            color:green;
+        }
+        /* p:first-child{
+            color: aqua;
+            font-size: 25px;
+        }
+        p:only-child{
+            color:red;
+        } */
+        div:nth-child(2) {
+            background-color: red;
+        }
+        p:nth-child(1) {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <!--  <h2>The visited, hover, active is working on current link</h2>
+    <a href="https://www.google.com/">Google</a>
+    <br> 
+    <h2>the first-child class</h2> -->
+    <p>this is a p1</p>
+    <div>
+    <p>this is a p1</p>
+    <h2>this is a h</h2>
+    </div>
+    <div>
+       <p>this is a p3</p> <!--only-child applied here as it has only one child inside it -->
+    </div>
+    <div>
+    <p>this is a p4</p>
+    <p>this is a p5</p>
+    </div>
+</body>
+</html>
