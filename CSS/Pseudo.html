@@ -27,6 +27,24 @@
         p:nth-child(1) {
             background-color: yellow;
         }
+        .para::first-line{
+            color: brown;
+            font-size: 20px;
+        }
+        .para::first-letter{
+            color:blue;
+            font-size: xx-large;
+        }
+        img{
+            opacity: 0.4;
+            border-radius: 50px;
+        }
+        img:hover{
+            opacity: 1.0;
+        }
+        .opacity{
+            display: inline;
+        }
     </style>
 </head>
 <body>
@@ -45,6 +63,15 @@
     <div>
     <p>this is a p4</p>
     <p>this is a p5</p>
+    </div>
+    <div>
+        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed sit quibusdam necessitatibus est in. Minus in eum perferendis, modi dolorum cum iste sunt at consequuntur quasi, tempora facere ea rerum?. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste harum neque aspernatur, ad suscipit eaque ratione maiores dolorum placeat quas assumenda quod corrupti quo iure itaque, quaerat aperiam enim commodi!. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam rerum molestiae non neque. Ipsam pariatur id vero nulla neque perferendis exercitationem eius ab hic amet! Facere asperiores itaque ullam saepe?</p>
+    </div>
+    <div class="opacity">
+        <img src="../images/download.jpg"/>
+    </div>
+    <div class="opacity">
+        <img src="../images/flower.jpg"/>
     </div>
 </body>
 </html>

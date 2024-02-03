@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .color1{
+            background-color: pink;
+            border: 2px solid black;
+            height: 100px;
+            width: 100px;
+            animation-name: changeColor;
+            animation-duration: 5s;
+            position: relative; /* for movement*/
+            animation-iteration-count: 2;/*also can set has infinity*/
+        }
+        /* @keyframes changeColor{
+            from{
+                background-color: red;
+            }
+            to{
+                background-color: aqua;
+            }
+        } */
+
+        @keyframes changeColor {
+            0%{
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+            25%{
+                background-color: yellow;
+                 left: 100px;
+                top: 0px;
+            }
+            50%{
+                background-color: blue;
+                 left: 100px;
+                top: 100px;
+            }
+            75%{
+                background-color: orange;
+                 left: 0px;
+                top: 100px;
+            }
+            100%{
+                background-color: rgb(0, 208, 255);
+                 left: 0px;
+                top: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="color1">
+        hello i am color
+    </div>
+</body>
+</html>
