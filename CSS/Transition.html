@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+            transition: width 2s,height 2s, transform 5s;
+            transition-delay: 1s;/*delay the transition for 1 second*/
+        }
+        img:hover{
+            width: 200px;
+            height: 200px;
+            transform: rotate(360deg);
+        }
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: brown;
+            border: 2px solid black;
+            transition: width 3s;
+        }
+        div:hover{
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hover on the div to see transition</h1>
+    <img src="../images/flower.jpg"/>
+    <div></div>
+</body>
+</html>
