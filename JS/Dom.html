@@ -7,10 +7,36 @@
 </head>
 <body>
     <h1>Hello <span id="name">welcome</span></h1>
+    <p id="example1"></p>
+    <button onclick="ArrDisplay()">Click on me</button>
+    <p id="example2"></p>
+    <p id="example3"></p>
+
     <script>
         let newContent = document.getElementById("name")//targeting id = "name"
         console.log(newContent);
         newContent.textContent = "Everyone"
+
+        //2
+        let arr = ["New York", "Brazil", "New Jersey"]
+        let example = document.getElementById("example1").innerHTML = arr[0]
+
+        //3
+        ArrDisplay=()=>{
+        let text = "<ul>"
+        for (let index = 0; index < arr.length ; index++){
+            text += "<li>"+ arr [index]+ "</li>"
+        }
+        text+= "</ul>"
+        document.getElementById("example2").innerHTML = text
+    }
+
+    //4
+    let car={
+        name: "BMW",
+        model :"BMW 7 SERIES"
+    }
+    document.getElementById("example3").innerHTML = "Name of car: " + car.name + "<br>" + "Model is: "+ car.model
     </script>
 </body>
-</html>
+</html> 
