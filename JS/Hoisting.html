@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <p>Hosting Example</p> 
+   <p id="store"></p>
+   <script>
+     "use strict";
+    data = 15
+    element = document.getElementById("store").innerHTML=`data content in hoisting mode is: ${data}`
+    var data,element
+   </script>
+
+
+
+  <!-- strict mode example|:
+
+  <h2> "use strict":</h2>
+  <h3>Using a variable without declaring it, is not allowed.</h3>
+  <script>
+  "use strict";
+  x = 3.14;  // This will cause an error (x is not defined).
+  </script> -->
+
+  <!-- function closure
+  <button onclick="myCounter()">click here</button>
+  <p id="value"></p>
+
+  <script>
+    const add = (function() {
+        let counter = 0
+        return function() {
+            return counter += 1
+        }
+    })()
+    function myCounter(){
+        document.getElementById("value").innerHTML=add()
+    }
+  </script> -->
+</body>
+</html>

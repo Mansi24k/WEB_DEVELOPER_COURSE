@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>create object from json string</h2>
+    <p id="jsonData"></p>
+    <script>
+        let text = '{"bank":['+
+        '{"acNumber":"SB101", "name":"Rohit", "Address":"Nagpur"},'+
+        '{"acNumber":"SB101", "name":"Nitu", "Address":"Hyderabad"},'+
+         '{"acNumber":"SB101", "name":"Depak", "Address":"Nagpur"} ] }'
+
+        obj = JSON.parse(text)
+        document.getElementById("jsonData").innerHTML= `${obj.bank[1].acNumber} ${obj.bank[1].name} ${obj.bank[1].Address }`
+    </script>
+    </script>
+    </script>
+</body>
+</html>

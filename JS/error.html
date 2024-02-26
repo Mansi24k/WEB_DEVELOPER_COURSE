@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //1
+        // try{
+        //     adddlert("are you concentrating?")
+        // }
+        // catch(err){
+        //     alert("Error is: "+ err.message)
+        // }
+
+        //2
+       function myFunction(){
+        let errMsg
+        errMsg = document.getElementById("errMsg")
+        errMsg.innerHTML = ""
+        let data = document.getElementById("data").value
+        try {
+            if (data == "") throw"given input is empty"
+            if (isNaN(data)) throw"given input is not a number"
+            if (data > 200) throw"given input is too high"
+            if (data < 100) throw"given input is too low"
+            alert(`congratulations correct data is entered : ${data}`)
+        }
+         catch(err){
+             errMsg.innerHTML=err
+       }
+       finally{
+        alert("finally block")
+       }
+    }
+        
+</script>
+</head>
+<body>
+    <p>Please input a number between 100 and 200:</p>
+   <input type="text" id="data">
+   <button onclick="myFunction()">click on me</button>
+   <p id = "errMsg"></p>
+</body>
+</html>                                            
