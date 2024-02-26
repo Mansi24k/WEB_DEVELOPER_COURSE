@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="aFunction()">Click</button>
+    <p id="out"></p>
+    <p id="out1"></p>
+    <p id="out2"></p>
+    <p id="out3"></p>
+    <p id="out4"></p>
+
+<script>
+        function aFunction(){
+            let movie = prompt("Enter your favorite movie name:")
+            if (movie != null){
+                document.getElementById("out").innerHTML = movie
+            }
+            let str = "hello everybody"
+            document.getElementById("out1").innerHTML= str.substr(5,10)
+
+            let num = 521.236502
+            document.getElementById("out2").innerHTML= num.toFixed(2)
+            document.getElementById("out3").innerHTML= num.toPrecision(3)
+            document.getElementById("out4").innerHTML= Math.ceil(25.023)
+
+
+        }
+    </script>
+</body>
+</html>
