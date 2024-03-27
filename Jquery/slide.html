@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        #header{
+            background-color: skyblue;
+            padding: 5px;
+        }
+        #panel{
+            background-color: grey;
+            display: none;
+            padding: 60px;
+
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+         $("#header").click(function(){
+            $("#panel").slideDown()
+        })
+         $("#header").dblclick(function(){
+            $("#panel").slideUp()
+        })
+    })
+    </script>
+</head>
+<body>
+    <div id="header"> Quote of the day</div>
+    <div id="panel">"To succeed in your mission, you must have single-minded devotion to your goal.”-APJ KALAM</div>
+</body>
+</html>

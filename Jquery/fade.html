@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
 <script>
     $(document).ready(function(){
         $("#myElement").fadeIn(3000),
@@ -16,15 +17,51 @@
             div.animate({left:"200px"}, "slow");
             div.animate({fontSize:"5em"}, "slow");
         })
+
+        $("#div2").mouseenter(function(){
+            $("#div2").html("<h1>you just entered to div element</h1>")
+        })
+
+        $("#one").mousedown(function(){
+            alert("mousedown event on link element")
+        })
+
+        $("input").focus(function(){
+            $(this).css("background-color","pink");
+        })
+        $("input").blur(function(){
+            $(this).css("background-color","skyblue");
+        })
+
+        $("#hide").click(function(){
+        $("#logo").hide();
+        })
+        $("#show").click(function(){
+        $("#logo").show();
+        })
+        
+       
     })
 </script>
 </head>
 <body>
+    
     <div id="myElement" style="display: none;">This is an example for fadeIn method</div>
     <p>this is fade</p>
     <button>click me</button>
-    <div id="div1" style="width: 100px; height: 100px; background-color: red; position:absolute">hello</div>
-    <div id="div2"></div>
-    <div id="div3"></div>
+    <div id="div1" style="width: 100px; height: 100px; position:absolute">hello</div>
+    <div id="div2">this is a div</div>
+ <a href="www.google.com" id="one">this is a link</a>
+ <form>
+    Name:<input type="text" name="name"><br>
+    Email:<input type="text" name="email">
+ </form>
+ <h3 align="center">click on the button to hide or show the image</h3>
+ <button id="hide">Hide</button>
+ <button id="show">Show</button>
+ <br>
+ <img src="../images/google.png" id="logo">
+ <br>
+
 </body>
 </html>

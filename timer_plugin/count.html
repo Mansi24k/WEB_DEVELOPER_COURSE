@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     <style>
+        #showcase{
+            font-size: 16px;
+            width: 500px;
+            margin: 150px auto;
+            /* border: 1px solid  skyblue; */
+            /* background-color: #092f6e; */
+        }
+        #showcase .heading{
+            /* background-color: rgba(0,0,0,.5); */
+            padding: 15px,0px,2px,0px;
+            margin: 0px,0px,30px,0px;
+        }
+        #showcase h1{
+            font-size: 4.2em;
+            color: white;
+            text-transform: uppercase;
+            margin: 0px,0px,0px,-5px;
+            text-align: center;
+        }
+        #showcase h2{
+            font-size: 1.5em;
+            text-transform: uppercase;
+            color: white;
+            text-align: center;
+            letter-spacing: 5px;
+        }
+        #timer{
+            display: flex;
+        }
+        #timer div{
+           border-radius: 50px;
+            position: relative;
+            width: 120px;
+            padding: 20px;
+            margin: 0 5px;
+            color: black;
+            font-size: 1.5em;
+            background-color: white;
+            -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,#0004);
+        }
+        #timer div:last-child{
+            background: #e91e63;
+            color: white;
+        }
+        body{
+            background-color: black;
+        }
+      
+           
+           
+     </style>
+     <script type="text/javascript"> 
+    
+     </script>
+</head>
+<body>
+    <div class="countdown" data-date="December 24, 2025 00:0:01"></div>
+
+
+    <div id="showcase">
+        <div class="heading">
+            <h2>Countdown to 2025</h2>
+            <h1>New Year</h1>
+        </div>
+        <div id="timer"></div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="countdown.js"></script>
+
+
+    <script type="text/javascript">
+        $('#timer').countdown('2025/01/01', function(event) {
+          $(this).html(event.strftime('<div>%w weeks</div>'+
+                                    '<div> %d days</div>'+
+                                    '<div> %H Hours</div>'+
+                                    '<div> %M Mins</div>'+
+                                    '<div> %S Sec </div>'));
+        });
+      </script>
+</body>
+</html>
